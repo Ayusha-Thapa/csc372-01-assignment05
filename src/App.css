@@ -1,0 +1,158 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #f7f1e8;
+  color: #333333;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  padding: 35px 20px;
+  background-color: #344e41;
+  color: white;
+  text-align: center;
+  border-bottom: 5px solid #d6b779;
+}
+
+h1,
+h2,
+h3 {
+  font-family: Georgia, serif;
+}
+
+h1 {
+  margin: 0;
+}
+
+header p {
+  margin-bottom: 0;
+}
+
+/* Page content */
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+h2,
+h3 {
+  color: #344e41;
+}
+
+a {
+  color: #344e41;
+}
+
+/* Search form */
+form {
+  padding: 20px;
+  background-color: white;
+  border: 1px solid #e3dfd5;
+  border-radius: 8px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+input {
+  width: 75%;
+  padding: 12px;
+  margin-right: 10px;
+  border: 1px solid #b8c3b8;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button {
+  padding: 12px 20px;
+  background-color: #344e41;
+  color: white;
+  border: 1px solid #344e41;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Gallery */
+#show-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.show-card {
+  width: 31%;
+  padding: 20px;
+  background-color: white;
+  border: 1px solid #e3dfd5;
+  border-radius: 8px;
+  overflow-wrap: anywhere;
+}
+
+.show-card h3 {
+  margin-top: 0;
+}
+
+.show-card p,
+.show-card li {
+  font-size: 14px;
+}
+
+.show-card ul {
+  padding-left: 20px;
+}
+
+/* Footer */
+footer {
+  padding: 25px 20px;
+  background-color: #344e41;
+  color: white;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer a {
+  color: #f4d58d;
+}
+
+/* Small screens */
+@media (max-width: 700px) {
+  .show-card {
+    width: 100%;
+  }
+
+  input {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 12px;
+  }
+
+  button {
+    width: 100%;
+  }
+}
+
+.show-poster {
+  display: block;
+  width: 100%;
+  max-width: 250px;
+  height: 300px;
+  margin: 15px 0;
+  object-fit: contain;
+}
